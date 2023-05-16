@@ -1,0 +1,23 @@
+body {
+    box-sizing: border-box;
+}
+
+#image-container {
+    width: 500px;
+    height: 270px;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+#title-image {
+    width: 100%;
+    /* position: absolute;
+    margin-top: -50px; */
+}
+
+/* Use Flexbox to align cropped image. If not working, uncomment the above. */
+
+.top-img {
+    width: 200px;
+    height: auto;
+}
