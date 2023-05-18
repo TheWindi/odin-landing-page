@@ -48,11 +48,22 @@ body {
 .categories {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.category-title,
+.top-container {
+    margin: 16px;
+}
+
+.category-title {
+    font-size: 28px;
 }
 
 .top-categories {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .top-container {
@@ -60,8 +71,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex: 1 1 200px;
+    flex: 0 1 200px;
     text-align: center;
+    border: solid rgba(3, 42, 3, 0.619);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .top-description {
@@ -73,6 +87,32 @@ body {
     height: 200px;
 }
 
+.signup-button,
+.top-button {
+    border-radius: 4px;
+    border:solid rgb(243, 238, 229);
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+}
+
+.top-button {
+    background-color:rgb(243, 238, 229);
+    border: solid black;
+    font-size: 16px;
+}
+
+.signup-button {
+    background-color: rgb(3, 42, 3);
+    color:rgb(243, 238, 229);
+
+}
+
+#quote-credit {
+    text-align: right;
+    font-size: 24px;
+    font-style: italic;
+}
+
 .subscribe {
     display: flex;
     justify-content: center;
@@ -81,12 +121,22 @@ body {
 
 .subscribe-container {
     background-color:rgb(65, 91, 65);
+    max-width: 700px;
+    margin: 70px 0;
+    padding: 16px;
+    color:rgb(243, 238, 229);
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 24px;
 }
 
 .categories,
 .subscribe {
     background-color: rgb(243, 238, 229);
-    padding-inline: min(10vw, 200px);
+    padding-inline: min(5vw, 200px);
 }
 
 .header,
@@ -94,12 +144,16 @@ body {
 .footer,
 .quote {
     background-color: rgb(3, 42, 3);
-    color: rgb(232, 224, 209);
+    color: rgb(243, 238, 229);
     padding-inline: min(10vw, 200px);
 }
 
 a {
     text-decoration: none;
     color: rgb(232, 224, 209);
-    padding: 8px;
+    padding: 16px 8px 0 8px;
+}
+
+h2 {
+    margin: 0
 }
